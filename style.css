@@ -1,0 +1,509 @@
+/*
+Theme Name: Morgan Mused
+Theme URI: IrvingBuelto.tech
+Author: Morgan Austin
+Version: 1.0
+Tags: responsive,bootstrap
+Developer: Irving Buelto
+*/
+
+
+/*--------------------------------------------------------------
+	General Layout
+--------------------------------------------------------------*/
+
+body {
+    color: black;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+}
+
+a:link,
+a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0080ff;
+    text-decoration: none;
+}
+
+p {
+    line-height: 1.65em;
+}
+
+h2,
+h1 {
+    font-family: 'Playball', cursive;
+    font-size: 2em;
+}
+
+article {
+    
+    margin-top: 20px;
+}
+
+
+/*--------------------------------------------------------------
+	Header title
+--------------------------------------------------------------*/
+
+.site-header h1 {
+    font-size: 8em;
+    color: white;
+}
+
+.site-header h3 {
+    font-size: 20px;
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+
+/*--------------------------------------------------------------
+	Navigation Menus
+--------------------------------------------------------------*/
+
+.navbar ul {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.navbar ul li {
+    display: inline-block;
+    list-style: none;
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, .8);
+}
+
+.navbar ul li a:link,
+.navbar ul li a:visited {
+    padding: 5px 30px;
+    text-decoration: none;
+    color: white;
+}
+
+.navbar ul li a:hover {
+    background-color: white;
+    color: black;
+}
+
+.navbar ul li.current-menu-item a:link,
+.navbar ul li.current-menu-item a:visited {
+    background-color: white;
+    color: black;
+}
+
+
+/*--------------------------------------------------------------
+	Footer
+--------------------------------------------------------------*/
+
+footer p {
+    display: inline-block;
+}
+
+.site-footer {
+    margin-top: 40px;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, .8);
+    color: white;
+}
+
+.site-footer ul {
+    margin-top: 10px;
+}
+
+.site-footer ul li {
+    display: inline-block;
+    list-style: none;
+    margin-left: -5px;
+}
+
+.site-footer ul li a:link,
+.site-footer ul li a:visited {
+    padding: 5px 30px;
+    text-decoration: none;
+    color: white;
+    text-align: left;
+}
+
+.site-footer ul li a:hover {
+    background-color: white;
+    color: black;
+}
+
+.site-footer ul li.current-menu-item a:link,
+.site-footer ul li.current-menu-item a:visited {
+    background-color: white;
+    color: black;
+}
+
+footer .portfolio a {
+    color: whitesmoke;
+}
+
+footer .portfolio a:hover {
+    color: #0080ff;
+    text-decoration: none;
+}
+
+
+/*--------------------------------------------------------------
+	Responsive Header
+--------------------------------------------------------------*/
+
+.site-header {
+    margin-top: -50px;
+}
+
+.Jumbotron {
+    margin-top: -20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.Jumbotron img {
+    width: 100%;
+    height: 100%;
+}
+
+.Jumbotron header {
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    bottom: 0;
+    top: 20%
+}
+
+@media screen and (max-width:1200px) {
+
+
+    .site-header h1 {
+        font-size: 4em;
+    }
+    .site-header h3 {
+        font-size: 1.5em;
+    }
+    .Jumbotron header {
+        width: 100%;
+        position: absolute;
+        height: 100%;
+        bottom: 0;
+    }
+}
+
+@media screen and (max-width:800px) {
+        
+    .hd-search {
+        visibility: hidden;
+    }
+    .site-header h3 {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:700px) {
+
+
+    .site-header {
+        margin-top: 10px;
+    }
+    .site-header h3 {
+        font-size: 14px;
+        margin-top: -10px;
+    }
+    .site-header h1 {
+        font-size: 3em;
+    }
+    .Jumbotron header {
+        width: 100%;
+        position: absolute;
+        height: 100%;
+        bottom: 0;
+        top: 0%
+    }
+    .navbar ul li a:link,
+    .navbar ul li a:visited {
+        margin-left: -85px;
+        padding: 0px 100px;
+        margin-bottom: 5px;
+        text-decoration: none;
+        color: white;
+        border-style: none;
+    }
+    .navbar ul li {
+        display: block;
+        list-style: none;
+    }
+}
+
+@media screen and (max-width:500px) {
+    
+    .site-header {
+        margin-top: -10px;
+    }
+    .site-header h1 {
+        font-size: 2em;
+    }
+    .site-header h3 {
+        font-size: 14px;
+        margin-top: -10px;
+    }
+    .Jumbotron header {
+        width: 100%;
+        position: absolute;
+        height: 100%;
+        bottom: 0;
+        top: 0%
+    }
+}
+
+
+/*--------------------------------------------------------------
+	Home Page blog grey line
+--------------------------------------------------------------*/
+.greyline-bottom {
+    border-bottom: 2px solid DarkGray;
+    padding-bottom: 20px;
+}
+
+
+.greyline {
+    padding-top: 10px;
+    border-top: 2px solid DarkGray;
+}
+
+.greyline-top {
+    margin-top: 10px;
+}
+
+.lineUp {
+    margin-top: 5px;
+}
+
+.post-info-date {
+    padding-top: 10px;
+    float: left;
+    margin-bottom: -10px;
+}
+
+.post-title {
+    text-indent: 10px;
+    margin-bottom: 20px;
+}
+
+.post-info {
+    color: #999;
+}
+
+
+/*--------------------------------------------------------------
+	Img thumbnail
+--------------------------------------------------------------*/
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/*--------------------------------------------------------------
+	post-about
+--------------------------------------------------------------*/
+
+.post-about h4 {
+    border-bottom: 2px solid DarkGray;
+    padding-bottom: 10px;
+}
+
+.post-title {
+    word-wrap: break-word;
+}
+
+
+/*--------------------------------------------------------------
+	thumbnail Hover effect
+--------------------------------------------------------------*/
+
+.hovereffect {
+    width: 100%;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    cursor: default;
+}
+
+.hovereffect .overlay {
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out
+}
+
+.hovereffect img {
+    display: block;
+    position: relative;
+    -webkit-transition: all .4s linear;
+    transition: all .4s linear;
+}
+
+.hovereffect h2 {
+    font-family: 'Cardo', serif;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    font-size: 20px;
+    -webkit-transform: translatey(-100px);
+    -ms-transform: translatey(-100px);
+    transform: translatey(-100px);
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    top: 10%;
+}
+
+.hovereffect a.info {
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    border: 1px solid #fff;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    margin: 40px 0 0;
+    padding: 7px 14px;
+}
+
+.hovereffect a.info:hover {
+    box-shadow: 0 0 5px #fff;
+}
+
+.hovereffect:hover img {
+    -ms-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.hovereffect:hover .overlay {
+    overflow-x: hidden;
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+.hovereffect:hover h2,
+.hovereffect:hover a.info {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    -ms-transform: translatey(0);
+    -webkit-transform: translatey(0);
+    transform: translatey(0);
+}
+
+.hovereffect:hover a.info {
+    -webkit-transition-delay: .2s;
+    transition-delay: .2s;
+}
+
+
+/*--------------------------------------------------------------
+	Search bar
+--------------------------------------------------------------*/
+
+.search-form {
+    margin-top: 20px;
+}
+
+.hd-search .search-field {
+    vertical-align: top;
+    padding: 5px 14px;
+    border: none;
+    width: 400px;
+}
+
+.search-submit {
+    margin-left: -5px;
+    background: black;
+    color: white;
+    padding: 5px 14px;
+    border: none;
+    vertical-align: top;
+}
+
+
+/*--------------------------------------------------------------
+page content margin
+--------------------------------------------------------------*/
+
+.contentMargin {
+    margin-top: 20px;
+}
+
+
+/*--------------------------------------------------------------
+blog content style
+--------------------------------------------------------------*/
+
+.blog-content {
+    margin-top: 20px;
+}
+.blogBanner {
+    margin: 20px;
+}
+
+/*--------------------------------------------------------------
+
+--------------------------------------------------------------*/
+
+.post1{
+     max-width:347px;
+  
+ }
+#pic{border: solid 1px red;}
+/*--------------------------------------------------------------
+
+--------------------------------------------------------------*/
+
+ul.bycategories {
+margin: 0;
+padding: 0;
+}
+ul.bycategories li {
+list-style: none; 
+list-style-type: none;
+margin: 0; 
+padding: 0;
+}
+ul.bycategories li a {
+list-style: none; 
+list-style-type: none;
+margin: 0 20px 15px 0; 
+float: left; 
+background: #eee; 
+color: #464646; 
+padding: 5px 10px;
+border-radius: 5px; 
+-moz-border-radius: 5px; 
+-webkit-border-radius: 5px;
+}
+ul.bycategories li a:hover{
+text-decoration: none; 
+background: black; 
+color: white;
+}
+.clear{clear: both;}
+
+.test a:link,a:visited, a:hover{
+font-weight: bold;}
