@@ -1,5 +1,5 @@
         
-         <article class="post1 col-lg-4 col-md-4 col-sm-12 col-xs-9">
+         <article class="post1 col-lg-4 col-md-3 col-sm-12 col-xs-9 ">
             <div class="lineUp">
                 <p class="post-info post-info-date">
                     <?php the_time('m/d/y'); ?>
