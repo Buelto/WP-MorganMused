@@ -10,8 +10,6 @@ add_action('wp_enqueue_scripts', 'MorganMused_resources');
 $defaults = array(
 	'width'                  =>1920,
 	'height'                 => 500,
-    'default-image' => get_template_directory_uri() . '/Img/Sunset_Header',
-	'flex-height'            => true,
 	'flex-width'             => true,
 	'uploads'                => true,
 	'random-default'         => false,
@@ -106,7 +104,7 @@ function  Appearance_customize_css(){?>
 </style>
 <?php }
 add_action('wp_head','Appearance_customize_css' );
-?>
+
 
 
 
