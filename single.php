@@ -1,4 +1,4 @@
-<!-- this page is for all pages-->
+<!-- control other pages except home-->
 <?php get_header_image(); ?>
 
 <?php
@@ -8,9 +8,8 @@ get_header();
 
 if (have_posts()) :
     while (have_posts()) : the_post(); ?>
-    <article class=" liveBlog ">
+    <article>
     <div class="text-center">
-    <p class="post-info post-info-date">     </p>
         <h2><?php the_title(); ?></h2>
     
         <p class="post-info greyline-bottom"> <?php the_time('m/d/y'); ?> | by: <?php the_author(); ?>  | Posted in 

@@ -5,7 +5,7 @@ get_header();
 if (have_posts()) :
     while (have_posts()) : the_post(); 
 ?>
-    <article class="post  text-center">
+    <article class="text-center">
      
         <p class="post-info post-info-date">     </p>
     

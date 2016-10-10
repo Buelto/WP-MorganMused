@@ -17,7 +17,7 @@
             <?php bloginfo('name'); ?> - &copy;
                 <?php echo date('Y');?>
         </p>
-        <p class="portfolio">created by <a href="www.Irvingbuelto.tech" target="_blank"> IrvingBuelto.tech</a></p>
+        <p class="portfolio">created by <a href="http://irvingbuelto.tech" target="_blank"> IrvingBuelto.tech</a></p>
 
 
     

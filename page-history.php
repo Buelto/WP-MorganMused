@@ -26,7 +26,7 @@ if (have_posts()) :
 </ul>
 <div class="clear"></div>
         <p><strong>By Date</strong></p>
-<ul>
+<ul class="ArcDate">
 <?php compact_archive($style='block'); ?>
 </ul>
         </div>

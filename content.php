@@ -1,18 +1,19 @@
-        
-         <article class="post1 col-lg-4 col-md-3 col-sm-12 col-xs-9 ">
-            <div class="lineUp">
-                <p class="post-info post-info-date">
+<!-- control home page-->        
+         <article class="post1 col-lg-4 col-md-3 col-sm-12 col-xs-12 ">
+            <div><!-- for some reasn this keeps the blog title and the date grouped togther on the home page-->
+                <p class="post-info-date">
                     <?php the_time('m/d/y'); ?>
                 </p>
 
                 <h2 class="post-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
             </div>
-            <p class="post-info greyline-top"> <span class="greyline"> by: <?php the_author(); ?> </span> | Posted in
+            <div class="seperator"></div>
+            <p class="post-info"> 
 
                 <?php
         
             $categories = get_the_category();
-            $separator =", ";
+            $separator =" ";
                 $output = '';
             
             if ($categories) { 
