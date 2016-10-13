@@ -4,21 +4,26 @@
 <head>
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <?php bloginfo('name'); ?>
+
+    </title>
+    <!--google fonts for Raleway, Playball and Cardo -->
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Playball" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cardo" rel="stylesheet">
+    <!--icons from font awesom-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
     <!-- bootstrap css-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <!-- jquery-->
     <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
     <!-- bootstrap JS-->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-<link href="https://fonts.googleapis.com/css?family=Cardo" rel="stylesheet">
-
-    <title>
-        <?php bloginfo('name'); ?>
-
-    </title>
-    <?php wp_head(); ?>
+    <link rel="profile" href="http://gmpg.org/xfn/11" />
+    <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
+    <?php if ( is_singular() && get_option( 'thread_comments' ) ) wp_enqueue_script( 'comment-reply' ); ?>
+        <?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
@@ -59,11 +64,11 @@
         <header class="site-header text-center">
             <h1><?php bloginfo('name'); ?></h1>
             <h3><?php bloginfo('description'); ?></h3>
-            
+
             <div class="row">
                 <div class="col-lg-10 col-lg-offset-1 hd-search">
                     <!--Header Search-->
-                        <?php get_search_form();?>
+                    <?php get_search_form();?>
                 </div>
             </div>
 

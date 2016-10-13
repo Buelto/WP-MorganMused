@@ -12,8 +12,7 @@ if (have_posts()) :
     <div class="text-center">
         <h2><?php the_title(); ?></h2>
     
-        <p class="post-info greyline-bottom"> <?php the_time('m/d/y'); ?> | by: <?php the_author(); ?>  | Posted in 
-        
+        <p class="category greyline-bottom"> <?php the_time('m/d/y'); ?> |
        <?php
         
             $categories = get_the_category();
@@ -35,8 +34,9 @@ if (have_posts()) :
         <?php the_post_thumbnail('banner-image'); ?>
         </div>
         </div>
-    </article>
 
+    </article>
+<?php comments_template();?>
     <?php endwhile;
 
         else:

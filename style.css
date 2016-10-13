@@ -13,9 +13,9 @@ Developer: Irving Buelto
 --------------------------------------------------------------*/
 
 body {
-    color: black;
+    color: #000000;
     font-family: 'Raleway', sans-serif;
-    font-size: 15px;
+    font-size: 16px;
 }
 
 a:link,
@@ -23,10 +23,8 @@ a:visited {
     text-decoration: none;
 }
 
-
 p {
     line-height: 1.50em;
-   
 }
 
 h2,
@@ -38,10 +36,6 @@ h1 {
 article {
     margin-top: 20px;
 }
-
-
-
-
 
 
 /*--------------------------------------------------------------
@@ -79,7 +73,9 @@ article {
     border: none;
 }
 
-.navbar-toggle{ border: none;}
+.navbar-toggle {
+    border: none;
+}
 
 .navbar ul li a:link,
 .navbar ul li a:visited {
@@ -90,15 +86,66 @@ article {
 
 .navbar ul li a:hover {
     background-color: white;
-    color: black;
+    color: #000000;
 }
 
 .navbar ul li.current-menu-item a:link,
 .navbar ul li.current-menu-item a:visited {
     background-color: white;
-    color: black;
+    color: #000000;
+}
+/*--------------------------------------------------------------
+	Home Page blog style
+--------------------------------------------------------------*/
+
+.category a:link,a:visited  {
+    padding-right: 2px;
+    color:#8c8c8c;
 }
 
+.category a:hover {
+    color: #000000;
+}
+.seperator {
+    margin-top: -10px;
+    margin-bottom: 10px;
+    max-width: 100px;
+    max-height: 50px;
+    border: rgba(169, 169, 169, .4) 1px solid;
+}
+
+.post-info-date {
+    padding-top: 10px;
+    float: left;
+    margin-bottom: -10px;
+     color:#8c8c8c;
+}
+
+
+
+
+.post-title {
+    text-indent: 10px;
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+
+.post-title a:link,a:visited {
+    color: #000000;}
+
+.post-title a:hover {
+color: #8c8c8c;
+}
+
+
+
+.post1 {
+    max-width: 343px;
+    max-height: 450px;
+    margin-left: 20px;
+    margin-bottom: 80px;
+}
 
 /*--------------------------------------------------------------
 	Footer
@@ -110,8 +157,9 @@ footer p {
 
 .site-footer {
     margin-top: 40px;
+    padding: 30px 0px;
     font-weight: bold;
-    background-color: rgba(0, 0, 0, .8);
+    background-color: rgba(0, 0, 0, .9);
     color: white;
 }
 
@@ -135,24 +183,27 @@ footer p {
 
 .site-footer ul li a:hover {
     background-color: white;
-    color: black;
+    color: #000000;
 }
 
 .site-footer ul li.current-menu-item a:link,
 .site-footer ul li.current-menu-item a:visited {
     background-color: white;
-    color: black;
+    color: #000000;
 }
+
 
 /*--------------------------------------------------------------
 	Developer Credit Design
 --------------------------------------------------------------*/
+
 footer .portfolio a {
     color: whitesmoke;
 }
 
 footer .portfolio a:hover {
-    color: #8c8c8c;;
+    color: #8c8c8c;
+    ;
     text-decoration: none;
 }
 
@@ -166,16 +217,19 @@ footer .portfolio a:hover {
 }
 
 .Jumbotron {
-    
     margin-top: -20px;
     overflow: hidden;
     position: relative;
+        -moz-box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
 }
 
 .Jumbotron img {
-
     width: 100%;
     height: 100%;
+
+    
 }
 
 .Jumbotron header {
@@ -190,25 +244,20 @@ footer .portfolio a:hover {
 /*--------------------------------------------------------------
 	Responsive Design
 --------------------------------------------------------------*/
+
 @media screen and (max-width:1200px) {
-
-
     .site-header h1 {
         font-size: 4em;
     }
     .site-header h3 {
         font-size: 1em;
     }
-    .post1{  
-   
-    margin-bottom: 80px;   
-   
-}
-
+    .post1 {
+        margin-bottom: 80px;
+    }
 }
 
 @media screen and (max-width:800px) {
-        
     .hd-search {
         visibility: hidden;
     }
@@ -218,10 +267,7 @@ footer .portfolio a:hover {
 }
 
 @media screen and (max-width:700px) {
-
-
-    .site-header {
-    }
+    .site-header {}
     .site-header h3 {
         font-size: 14px;
         margin-top: -10px;
@@ -252,7 +298,6 @@ footer .portfolio a:hover {
 }
 
 @media screen and (max-width:500px) {
-    
     .site-header {
         margin-top: -10px;
     }
@@ -276,57 +321,17 @@ footer .portfolio a:hover {
 /*--------------------------------------------------------------
 pages style
 --------------------------------------------------------------*/
+
 .greyline-bottom {
-    border-bottom: 2px solid rgba(169, 169, 169,.4);
+    border-bottom: 2px solid rgba(169, 169, 169, .4);
     padding-bottom: 20px;
 }
+
 .contentMargin {
     margin-top: 20px;
-    
-}
-
-/*--------------------------------------------------------------
-	Home Page blog style
---------------------------------------------------------------*/
-
-.seperator {
-    margin-top: -10px;
-    margin-bottom: 10px;
-    max-width: 100px;
-    max-height: 50px;
-    border: rgba(169, 169, 169,.4) 1px solid;
 }
 
 
-
-.post-info-date {
-    padding-top: 10px;
-    float: left;
-    margin-bottom: -10px;
-    color: #8c8c8c;
-}
-
-.post-title {
-    text-indent: 10px;
-    margin-bottom: 20px;
-}
-
-.post-info a:link { 
-    padding-right:2px;
- color: #8c8c8c;
-
-}
-
-.post-info  a:hover{
-color: black;
-}
-
-.post1{  max-width:343px;
-    max-height: 450px;
-    margin-left: 20px;
-    margin-bottom: 80px;   
-   
-}
 
 /*--------------------------------------------------------------
 	blog Img thumbnail
@@ -335,13 +340,16 @@ color: black;
 img {
     max-width: 100%;
     height: auto;
+        -moz-box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+   
 }
 
 
 /*--------------------------------------------------------------
 	post-about
 --------------------------------------------------------------*/
-
 
 .post-title {
     word-wrap: break-word;
@@ -361,6 +369,9 @@ img {
     text-align: center;
     cursor: default;
     margin-bottom: 10px;
+        -moz-box-shadow: 3px 2px 6px rgba(0, 0, 0, .5);
+    -webkit-box-shadow: 3px 2px 6px rgba(0, 0, 0, .5);
+    box-shadow: 3px 2px 6px rgba(0, 0, 0, .5);
 }
 
 .hovereffect .overlay {
@@ -382,6 +393,7 @@ img {
     position: relative;
     -webkit-transition: all .4s linear;
     transition: all .4s linear;
+    
 }
 
 .hovereffect h2 {
@@ -448,6 +460,7 @@ img {
 
 .search-form {
     margin-top: 20px;
+    
 }
 
 .hd-search .search-field {
@@ -455,18 +468,22 @@ img {
     padding: 5px 14px;
     border: none;
     width: 400px;
+        -moz-box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
 }
 
 .search-submit {
     margin-left: -5px;
-    background: black;
+    background: #000000;
     color: white;
     padding: 5px 14px;
     border: none;
     vertical-align: top;
+        -moz-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
 }
-
-
 
 
 /*--------------------------------------------------------------
@@ -475,11 +492,10 @@ blog content style
 
 .blog-content {
     margin-top: 20px;
-  
 }
+
 .blogBanner {
     margin: 20px;
-   
 }
 
 
@@ -488,44 +504,127 @@ archives tabs
 --------------------------------------------------------------*/
 
 ul.bycategories {
-margin: 0;
-padding: 0;
+    margin: 0;
+    padding: 0;
 }
+
 ul.bycategories li {
-list-style: none; 
-list-style-type: none;
-margin: 0; 
-padding: 0;
+    list-style: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
+
 ul.bycategories li a {
-list-style: none; 
-list-style-type: none;
-margin: 0 20px 15px 0; 
-float: left; 
-background: #eee; 
-color: #464646; 
-padding: 5px 10px;
-border-radius: 5px; 
--moz-border-radius: 5px; 
--webkit-border-radius: 5px;
+    list-style: none;
+    list-style-type: none;
+    margin: 0 20px 15px 0;
+    float: left;
+    background: #eee;
+    color: #464646;
+    padding: 5px 10px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
 }
-ul.bycategories li a:hover{
-text-decoration: none; 
-background: black; 
-color: white;
+
+ul.bycategories li a:hover {
+    text-decoration: none;
+    background: #000000;
+    color: white;
 }
-.clear{clear: both;}
+
+.clear {
+    clear: both;
+}
+
 
 /*--------------------------------------------------------------
 	Archive date link style
 --------------------------------------------------------------*/
-.ArcDate a:link { 
-    padding-right:2px;
-    color: black;
 
+.ArcDate a:link {
+    padding-right: 2px;
+    color: #000000;
 }
 
-.ArcDate  a:hover{
+.ArcDate a:hover {
     color: #8c8c8c;
+}
 
+
+/*--------------------------------------------------------------
+	Social Media
+--------------------------------------------------------------*/
+
+.social i {
+    margin: 10px;
+    font-size: 24px;
+    color: azure;
+}
+.social a:visited i {
+    color: azure;
+}
+.social a:hover i {
+    color:#8c8c8c;
+}
+
+.aboutsocial i {
+    margin: 0px 5px;
+    font-size: 24px;
+    color: #000000;
+}
+
+.aboutsocial a:visited i {
+    color: #000000;
+}
+.aboutsocial a:hover i {
+    color:#8c8c8c;
+}
+
+
+
+/*-- Comment Design--*/
+
+.commentlist li {
+    list-style-type: none;
+}
+
+#comment {
+    max-width: 100%;
+    -moz-box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+}
+
+
+.comment-author {
+    display: inline-block;
+    font-weight: bold;
+    float: left;
+    font-size: 16px;
+    margin: 0px;
+}
+
+
+/*--dates--*/
+
+.commentmetadata {
+    text-indent: 5px;
+    display: inline-block;
+    font-size: 14px;
+    color: #696969;
+    margin: 7px 0px 0px 0px;
+}
+
+.comment-body {
+    border: 1px solid #d2d2d2;
+    -moz-box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+    margin-bottom: 10px;
+    padding: 20px;
+    background: #f0f0f0;
+    font-size: 16px;
+    word-wrap: break-word;
 }

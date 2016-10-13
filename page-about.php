@@ -6,11 +6,20 @@ if (have_posts()) :
     while (have_posts()) : the_post(); 
 ?>
     <article class="text-center">
-     
-        <p class="post-info post-info-date">     </p>
     
         <h2 ><?php the_title(); ?></h2>
-        <h4 class="greyline-bottom"><i>This is where friends are made!</i></h4>
+                       <div class="aboutsocial greyline-bottom">
+            <a href="#"><i class="fa fa-facebook-square"></i></a>
+            <a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-google-plus-square" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-snapchat-square" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-pinterest-square" aria-hidden="true"></i></a>
+           <a href="#"> <i class="fa fa-youtube-square" aria-hidden="true"></i></a>
+        </div>
+
+        
         <div class="contentMargin">
         <?php the_content(); ?>
         </div>
