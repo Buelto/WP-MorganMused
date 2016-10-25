@@ -534,6 +534,21 @@ ul.bycategories li a:hover {
     color: white;
 }
 
+.ArcDate a:link {
+    padding-right: 2px;
+}
+
+.ArcDate a:hover {
+    color: #8c8c8c;
+}
+
+.ArcDate {
+    border: 1px solid red;
+    list-style: none; 
+list-style-type: none;
+    
+}
+
 .clear {
     clear: both;
 }
@@ -543,14 +558,6 @@ ul.bycategories li a:hover {
 	Archive date link style
 --------------------------------------------------------------*/
 
-.ArcDate a:link {
-    padding-right: 2px;
-    color: #000000;
-}
-
-.ArcDate a:hover {
-    color: #8c8c8c;
-}
 
 
 /*--------------------------------------------------------------
